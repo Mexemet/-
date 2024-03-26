@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body {
+  background-color: #210228;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header_logo {
+  padding-right: 250px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.header_nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.header_btn {
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 67px;
+}
+.header_btn button {
+  cursor: pointer;
+}
+
+.lang_btn {
+  width: 41px;
+  height: 41px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.matc_btn {
+  width: 110px;
+  height: 41px;
+  background-color: #6F0780;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.slider_container {
+  padding-top: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  --swiper-theme-color: white;
+}
+
+.swiper-button-prev {
+  padding-left: 40px;
+}
+
+.swiper-button-next {
+  padding-right: 40px;
+}
+
+.h_teams {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 100px;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+}
+
+.teams_wrapper {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 215px);
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.teams_btn {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.teams_btn button {
+  color: white;
+  background-color: #6F0780;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.tournament_wrapper {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 620px 597px;
+  justify-content: center;
+  gap: 80px;
+}
+
+.tournament_text {
+  color: white;
+}
+.tournament_text h1 {
+  font-size: 48px;
+}
+.tournament_text p {
+  font-size: 32px;
+}
+
+.tournament_btn {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.tournament_btn button {
+  color: white;
+  background-color: #6F0780;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.souvenirs_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 415px);
+  align-items: center;
+  justify-content: center;
+  padding-top: 106px;
+  gap: 50px;
+}
+
+.souvenirs_card p {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.souvenirs_card .souvenirs_img {
+  padding-left: 60px;
+}
+.souvenirs_card img {
+  height: 291px;
+}
+
+.footer_container {
+  padding-top: 50px;
+}
+
+.footer_logo {
+  padding-left: 187px;
+}
+
+.privacy_company {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 1440px) and (max-width: 1685px) {
+  .header_btn {
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .teams_wrapper {
+    grid-template-columns: repeat(2, 215px);
+    gap: 350px;
+    grid-row-gap: 187px;
+  }
+  .tournament_wrapper {
+    grid-template-columns: 620px;
+    justify-content: center;
+  }
+  .tournament_img {
+    order: 0;
+  }
+  .tournament_text {
+    order: 1;
+  }
+  .souvenirs_wrapper {
+    grid-template-columns: repeat(2, 415px);
+    gap: 150px;
+  }
+}
+@media (min-width: 360px) and (max-width: 1440px) {
+  .header_nav, .header_btn {
+    display: none;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .h_teams, .teams_btn, .tournament_wrapper, .tournament_btn, .souvenirs_wrapper, .slider_container, .souvenirs_container {
+    width: 350px;
+  }
+  .h_teams img, .teams_btn img, .tournament_wrapper img, .tournament_btn img, .souvenirs_wrapper img, .slider_container img, .souvenirs_container img {
+    width: 350px;
+  }
+  .souvenirs_img img {
+    width: 350px;
+  }
+  .souvenirs_card .souvenirs_img {
+    padding-left: 0px;
+  }
+  .swiper img {
+    width: 350px;
+    height: 200px;
+  }
+  .btn {
+    display: none;
+  }
+  .teams_wrapper {
+    grid-template-columns: 215px;
+    gap: 350px;
+    grid-row-gap: 150px;
+    width: 350px;
+  }
+  .tournament_wrapper {
+    grid-template-columns: 350px;
+    justify-content: center;
+    gap: 0px;
+  }
+  .tournament_img {
+    order: 0;
+  }
+  .tournament_img img {
+    width: 350px;
+  }
+  .tournament_text {
+    order: 1;
+  }
+  .tournament_text h1, .tournament_text p {
+    width: 350px;
+  }
+  .tournament_text p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .souvenirs_wrapper {
+    grid-template-columns: 350px;
+    gap: 150px;
+  }
+  .footer_logo {
+    padding-left: 0px;
+  }
+  .footer_container {
+    width: 350px;
+  }
+}
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header_logo {
+  padding-right: 250px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.header_nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.header_btn {
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 67px;
+}
+.header_btn button {
+  cursor: pointer;
+}
+
+.lang_btn {
+  width: 41px;
+  height: 41px;
+  background-color: #5A5A5A;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.matc_btn {
+  width: 110px;
+  height: 41px;
+  background-color: #6F0780;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 12px;
+}
+
+.slider_container {
+  padding-top: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  --swiper-theme-color: white;
+}
+
+.swiper-button-prev {
+  padding-left: 40px;
+}
+
+.swiper-button-next {
+  padding-right: 40px;
+}
+
+.h_teams {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 100px;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+}
+
+.teams_wrapper {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 215px);
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.teams_btn {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.teams_btn button {
+  color: white;
+  background-color: #6F0780;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.tournament_wrapper {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 620px 597px;
+  justify-content: center;
+  gap: 80px;
+}
+
+.tournament_text {
+  color: white;
+}
+.tournament_text h1 {
+  font-size: 48px;
+}
+.tournament_text p {
+  font-size: 32px;
+}
+
+.tournament_btn {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.tournament_btn button {
+  color: white;
+  background-color: #6F0780;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.souvenirs_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 415px);
+  align-items: center;
+  justify-content: center;
+  padding-top: 106px;
+  gap: 50px;
+}
+
+.souvenirs_card p {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.souvenirs_card .souvenirs_img {
+  padding-left: 60px;
+}
+.souvenirs_card img {
+  height: 291px;
+}
+
+.footer_container {
+  padding-top: 50px;
+}
+
+.footer_logo {
+  padding-left: 187px;
+}
+
+.privacy_company {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 1440px) and (max-width: 1685px) {
+  .header_btn {
+    display: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .teams_wrapper {
+    grid-template-columns: repeat(2, 215px);
+    gap: 350px;
+    grid-row-gap: 187px;
+  }
+  .tournament_wrapper {
+    grid-template-columns: 620px;
+    justify-content: center;
+  }
+  .tournament_img {
+    order: 0;
+  }
+  .tournament_text {
+    order: 1;
+  }
+  .souvenirs_wrapper {
+    grid-template-columns: repeat(2, 415px);
+    gap: 150px;
+  }
+}
+@media (min-width: 360px) and (max-width: 1440px) {
+  .header_nav, .header_btn {
+    display: none;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .h_teams, .teams_btn, .tournament_wrapper, .tournament_btn, .souvenirs_wrapper, .slider_container, .souvenirs_container {
+    width: 350px;
+  }
+  .h_teams img, .teams_btn img, .tournament_wrapper img, .tournament_btn img, .souvenirs_wrapper img, .slider_container img, .souvenirs_container img {
+    width: 350px;
+  }
+  .souvenirs_img img {
+    width: 350px;
+  }
+  .souvenirs_card .souvenirs_img {
+    padding-left: 0px;
+  }
+  .swiper img {
+    width: 350px;
+    height: 200px;
+  }
+  .btn {
+    display: none;
+  }
+  .teams_wrapper {
+    grid-template-columns: 215px;
+    gap: 350px;
+    grid-row-gap: 150px;
+    width: 350px;
+  }
+  .tournament_wrapper {
+    grid-template-columns: 350px;
+    justify-content: center;
+    gap: 0px;
+  }
+  .tournament_img {
+    order: 0;
+  }
+  .tournament_img img {
+    width: 350px;
+  }
+  .tournament_text {
+    order: 1;
+  }
+  .tournament_text h1, .tournament_text p {
+    width: 350px;
+  }
+  .tournament_text p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .souvenirs_wrapper {
+    grid-template-columns: 350px;
+    gap: 150px;
+  }
+  .footer_logo {
+    padding-left: 0px;
+  }
+  .footer_container {
+    width: 350px;
+  }
+}/*# sourceMappingURL=style.css.map */
